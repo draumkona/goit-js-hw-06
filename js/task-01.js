@@ -1,6 +1,5 @@
-const category = document.querySelector('#categories');
 const listItems = document.querySelectorAll('#categories > .item');
-const header = category.querySelectorAll('h2');
+const header = document.querySelectorAll('h2');
 
 const messageOfCategories = `Number of categories: ${header.length}`; // kategorie
 console.log(messageOfCategories);
