@@ -1,10 +1,11 @@
-function doubleChar(str) {
-  let newWord = "";
-  for (let i = 0; i < str.length; i++) {
-    newWord += str[i].repeat(2);
-  }
-  return newWord;
-}
+function sum(numbers) {
+  "use strict";
+  let sum = 0;
 
-console.log(doubleChar("abcd")); //aabbccdd
-console.log(doubleChar("Adidas")); //AAddiiddaass
+  return numbers.length < 0
+    ? 0
+    : numbers.forEach((element) => {
+        sum += element;
+      });
+}
+console.log(sum([1, 5.2, 4, 0, -1])); //9,2
